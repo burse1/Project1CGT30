@@ -1,11 +1,11 @@
-export default function section({ title, children }) {
+export default function Section({ title, action, children }) {
   return (
     <section className="section">
-      <div className="section__header">
-        <h2 className="section__title">{title}</h2>
+      <div className="sectionHeader">
+        <h2 className="sectionTitle">{title}</h2>
+        {action ? <button className="linkBtn">{action}</button> : null}
       </div>
-
-      <div className="section__body">{children}</div>
+      {children}
     </section>
   );
 }
