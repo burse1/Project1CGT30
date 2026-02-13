@@ -1,4 +1,4 @@
-export default function TopBar() {
+export default function TopBar({ query, onQueryChange }) {
   return (
     <header className="topBar">
       <div className="brand">
@@ -10,8 +10,10 @@ export default function TopBar() {
         <div className="searchIcon" aria-hidden="true" />
         <input
           className="searchInput"
-          placeholder="Search"
-          aria-label="Search"
+          placeholder="Search experiences"
+          aria-label="Search experiences"
+          value={query}
+          onChange={(e) => onQueryChange(e.target.value)}
         />
       </div>
 
