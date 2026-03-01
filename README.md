@@ -21,3 +21,5 @@ A dropdown allows users to sort experiences:
 **By popularity
 Alphabetically (A–Z)**
 Sorting is handled using state and derived data with useMemo.
+Site finalized, icons added, functionality improved.
+**Potential Future improvements: Add several different page functionalities - create new games to show on homepage, open strictly friends page, potential catalog, etc.**
