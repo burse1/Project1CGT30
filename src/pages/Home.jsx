@@ -52,7 +52,7 @@ const FEED_TABS = [
 ];
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // ✅ inside component
+  const [isMenuOpen, setIsMenuOpen] = useState(false); //  inside component
   const [query, setQuery] = useState("");
   const [activeFeed, setActiveFeed] = useState("all");
   const [sortMode, setSortMode] = useState("popular");
